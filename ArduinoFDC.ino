@@ -28,7 +28,7 @@
 #define USE_MONITOR
 
 // comenting this out will remove support for XModem data transfers
-//#define USE_XMODEM
+#define USE_XMODEM
 
 
 #if defined(__AVR_ATmega32U4__) && defined(USE_ARDUDOS) && (defined(USE_MONITOR) || defined(USE_XMODEM))

@@ -141,20 +141,22 @@ asm ("   .equ TIFR,    0x16\n"  // timer 1 flag register
 
 // ------------------------------  Pin assignments for Arduino Mega (Atmega2560)  -----------------------------
 
-#define PIN_STEP      53  // can be changed to different pin
-#define PIN_STEPDIR   52  // can be changed to different pin
-#define PIN_MOTORA    51  // can be changed to different pin
-#define PIN_SELECTA   50  // can be changed to different pin
-#define PIN_SIDE      49  // can be changed to different pin
+// Chuxman: Falta el pin Disk Change 28/10/2022
+
+#define PIN_STEP      29  // can be changed to different pin
+#define PIN_STEPDIR   28  // can be changed to different pin
+#define PIN_MOTORA    24  // can be changed to different pin
+#define PIN_SELECTA   26  // can be changed to different pin
+#define PIN_SIDE      35  // can be changed to different pin
 #define PIN_INDEX     47  // accessed via IDXPORT/IDXBIT #defines below
 #define PIN_READDATA  48  // must be pin 48 (ICP for timer5)
 #define PIN_WRITEDATA 46  // must be pin 46 (OCP for timer5)
 #define PIN_WRITEGATE 45  // accessed via WGPORT/WGBIT #defines below
-#define PIN_TRACK0    44  // can be changed to different pin
-#define PIN_WRITEPROT 43  // can be changed to different pin or commented out
-#define PIN_DENSITY   42  // can be changed to different pin or commented out
-#define PIN_MOTORB    41  // can be changed to different pin or commented out (together with PIN_SELECTB)
-#define PIN_SELECTB   40  // can be changed to different pin or commented out (together with PIN_MOTORB)
+#define PIN_TRACK0    32  // can be changed to different pin
+#define PIN_WRITEPROT 33  // can be changed to different pin or commented out
+#define PIN_DENSITY   22  // can be changed to different pin or commented out
+#define PIN_MOTORB    27  // can be changed to different pin or commented out (together with PIN_SELECTB)
+#define PIN_SELECTB   25  // can be changed to different pin or commented out (together with PIN_MOTORB)
 
 
 asm ("   .equ TIFR,    0x1A\n"  // timer 5 flag register
